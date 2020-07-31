@@ -2,7 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
+import axios from './common/myaxios'
+//在Vue原型上面添加$axios
+Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 
 new Vue({
